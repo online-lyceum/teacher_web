@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nginx:
+    build: ./
+    ports:
+      - "8002:80"
+    environment:
+      - VUE_APP_TIME_API_URL="https://test.lyceumland.ru/api"

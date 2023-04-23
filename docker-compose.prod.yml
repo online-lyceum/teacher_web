@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx:
+    build: ./
+    restart: always
+    networks:
+      - front_net
+    environment:
+      - VUE_APP_TIME_API_URL=$TIME_API_URL
+
+networks:
+  front_net:
+    external: true
+
