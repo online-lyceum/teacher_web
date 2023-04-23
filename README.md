@@ -1,4 +1,4 @@
-# teacher_web
+# teacher web
 
 ## Project setup
 ```
